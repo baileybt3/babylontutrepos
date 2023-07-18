@@ -22,6 +22,7 @@
         <script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
         <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
         <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+        <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script>
 
         <style>
             html, body {
@@ -87,6 +88,9 @@
     BABYLON.SceneLoader.ImportMesh("", Assets.meshes.Yeti.rootUrl, Assets.meshes.Yeti.filename, scene, function(newMeshes){
     newMeshes[0].scaling = new BABYLON.Vector3(0.1, 0.1, 0.1);
     });
+
+    <babylon model="Path to File"></babylon> 
+        
     return scene;
 };
                 window.initFunction = async function() {
@@ -113,6 +117,7 @@
         window.addEventListener("resize", function () {
             engine.resize();
         });
+    
     </script>
 </body>
 </html>
